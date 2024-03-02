@@ -2,41 +2,42 @@
 
 # How to setup google test frame work for c++ code
 
-First download the gtest repo
+#First download the gtest repo
 
 git clone https://github.com/google/googletest.git
 
 
-Navigate the googletest directory
+#Navigate the googletest directory
 
 cd googletest
 
-create a build  directory
+#create a build  directory
 
 mkdir build
+
 cd build
 
 
-Run  Cmake to generate the build files
+#Run  Cmake to generate the build files
 
 cmake ..
 
-Build gtest
+#Build gtest
 
 make
 
 
-For accessing the .a files through the system wide
+#For accessing the .a files through the system wide
 
 sudo make install
 
-Create a new folder and copy the test.cpp content for your testing
+#Create a new folder and copy the test.cpp content for your testing
 
 compile the code
 
 vidkrix@venky-worker:~/Desktop/work/gtest_example$ g++ -o test test.cpp -I/home/vidkrix/Desktop/work/googletest/googletest/include/ -lgtest
 
-run the test binary
+#run the test binary
 
 vidkrix@venky-worker:~/Desktop/work/gtest_example$ ./test
 
